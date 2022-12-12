@@ -46,6 +46,16 @@ namespace Queues_063
             /*one the position of rear is determinted, the element is added at its proper place*/
             queue_array[REAR] = element;
         }
+        public void remove()
+        {
+            /*Check wheater the queue is empty*/
+            if (FRONT == -1)
+            {
+                Console.WriteLine("\nQueue overflow \n");
+                return;
+            }
+            Console.WriteLine("\nThe element deleted from the queue is: " + queue_array[FRONT] + "\n");
+        }
         static void Main(string[] args)
         {
         }
