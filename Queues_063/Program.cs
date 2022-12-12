@@ -72,8 +72,15 @@ namespace Queues_063
                     FRONT = FRONT +1;
             }
         }
+        public void display()
+        {
+            int FRONT_Position = FRONT;
+            int REAR_Position = REAR;
+
+        }
         static void Main(string[] args)
         {
+            
         }
     }
 }
