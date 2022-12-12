@@ -83,7 +83,17 @@ namespace Queues_063
                 return;
             }
             Console.WriteLine("\nElemenets in the queue are..........................\n");
-            
+            if (FRONT_Position <= REAR_Position)
+            {
+                /*traverses the queue till the last element present in an array*/
+                while(FRONT_Position <= REAR_Position)
+                {
+                    Console.WriteLine(queue_array[FRONT_Position] + "  ");
+                    FRONT_Position++;
+                }
+                Console.WriteLine();
+            }
+
         }
         static void Main(string[] args)
         {
