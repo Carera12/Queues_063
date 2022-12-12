@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Queues_063
 {
@@ -93,7 +95,24 @@ namespace Queues_063
                 }
                 Console.WriteLine();
             }
-
+            else
+            {
+                /*traverses the queue till the last position of the array*/
+                while(FRONT_Position <= max -1)
+                {
+                    Console.WriteLine(queue_array[FRONT_Position] + "  ");
+                    FRONT_Position++;
+                }
+                /*set the FRONT position to the first element of the array*/
+                FRONT_Position = 0;
+                /*traverses the queue till the element present in the queue*/
+                while (FRONT_Position <= REAR_Position)
+                {
+                    Console.WriteLine(queue_array[FRONT_Position] + "  ");
+                    FRONT_Position++;
+                }
+                Console.WriteLine();
+            }
         }
         static void Main(string[] args)
         {
