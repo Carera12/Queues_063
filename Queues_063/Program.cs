@@ -76,7 +76,14 @@ namespace Queues_063
         {
             int FRONT_Position = FRONT;
             int REAR_Position = REAR;
-
+            /*Check if the queue is empty*/
+            if (FRONT == -1)
+            {
+                Console.WriteLine("\nQueue overflow \n");
+                return;
+            }
+            Console.WriteLine("\nElemenets in the queue are..........................\n");
+            
         }
         static void Main(string[] args)
         {
