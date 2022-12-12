@@ -55,6 +55,22 @@ namespace Queues_063
                 return;
             }
             Console.WriteLine("\nThe element deleted from the queue is: " + queue_array[FRONT] + "\n");
+            /*Check if the queue has one element */
+            if (FRONT == REAR)
+            {
+                FRONT = -1;
+                REAR= -1;
+            }
+            else
+            {
+                /*if the element to be deleted is at the last position of the array, then the value
+                 of FRONT is set to 0 i.e to the first element of the array*/
+                if (FRONT == max - 1)
+                    FRONT= 0;
+                else
+                    /*FRONT is incremeneted by one of if it is not the first element of array*/
+                    FRONT = FRONT +1;
+            }
         }
         static void Main(string[] args)
         {
