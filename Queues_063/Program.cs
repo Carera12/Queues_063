@@ -18,6 +18,16 @@ namespace Queues_063
             FRONT = -1; 
             REAR = -1;
         }
+        public void insert(int elemen)
+        {
+            /*this statment checks for the overflow condition.*/
+            if((FRONT == 0 && REAR == max - 1) || (FRONT ==REAR + 1))
+            {
+                Console.WriteLine("\nQueue overflow \n");
+                return;
+            }
+           
+        }
         static void Main(string[] args)
         {
         }
