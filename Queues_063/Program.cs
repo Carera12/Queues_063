@@ -18,7 +18,7 @@ namespace Queues_063
             FRONT = -1; 
             REAR = -1;
         }
-        public void insert(int elemen)
+        public void insert(int element)
         {
             /*this statment checks for the overflow condition.*/
             if((FRONT == 0 && REAR == max - 1) || (FRONT ==REAR + 1))
@@ -43,7 +43,8 @@ namespace Queues_063
                     /*If REAL is not at the last position, then its value is incremented by one*/
                     REAR = REAR + 1;
             }
-            
+            /*one the position of rear is determinted, the element is added at its proper place*/
+            queue_array[REAR] = element;
         }
         static void Main(string[] args)
         {
